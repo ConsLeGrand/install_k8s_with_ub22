@@ -88,7 +88,7 @@ $ systemctl enable --now kubelet.service
 $ sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 ```
 
-## Cette commande initialisera le cluster Kubernetes et créera un nouveau fichier de configuration dans /etc/kubernetes/admin.conf. Copiez ce fichier dans votre répertoire personnel à l'aide de la commande suivante :
+#### Cette commande initialisera le cluster Kubernetes et créera un nouveau fichier de configuration dans /etc/kubernetes/admin.conf. Copiez ce fichier dans votre répertoire personnel à l'aide de la commande suivante :
 ```bash
 $ mkdir -p $HOME/.kube
 $ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
