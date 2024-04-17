@@ -1,2 +1,2 @@
-# install_k8s_with_ub22
-install k8S with ubuntu 22 server
+# Installer Kubernetes sur Ubuntu 22.04 
+$ sudo apt update && sudo apt upgrade -y
