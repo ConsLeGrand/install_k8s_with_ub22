@@ -12,7 +12,7 @@ Ce guide explique comment installer un **cluster Kubernetes v1.34** composé d�
 | Worker | `k8s-worker-01` | 2 vCPU | 4 Go | 192.168.122.113|
 | Worker | `k8s-worker-02` | 2 vCPU | 4 Go | 192.168.122.156 |
 
- Assurez-vous que chaque machine possède une adresse IP fixe et que le nom d’hôte est configuré correctement.
+> 💡 Assurez-vous que chaque machine possède une adresse IP fixe et que le nom d’hôte est configuré correctement.
 
 ---
 
@@ -90,10 +90,13 @@ nous avons fais le choix de Flannel
 kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
 ```
 ## 7. Ajouter le nœud Worker
-Avant d'ajouter les workers assurer vous d'abord que le master est pret (ready) comme le montre la capture ci-dessous
+
+> 💡 Avant d'ajouter les workers assurer vous d'abord que le master est pret (ready) comme le montre la capture ci-dessous
+
 ```bash
 kubectl get nodes
 ```
+
 ![Plot](./master-ready.png)
 Sur le worker, exécuter la commande affichée à la fin de kubeadm init, par exemple :
 ```bash
