@@ -116,7 +116,7 @@ kubectl get pods -A
 
 
 -----
-Constantin S.E BASSENE
-Red Hat Certified Architect in Infrastructure 
+Constantin S.E BASSENE --
+Red Hat Certified Architect in Infrastructure --
 Cloud/DevOps Engineer 
 
