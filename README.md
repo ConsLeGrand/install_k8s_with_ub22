@@ -97,22 +97,22 @@ kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Doc
 kubectl get nodes
 ```
 
-![Plot](/images/master-ready.png)
+![Plot](/cap/master-ready.png)
 Sur le worker, exécuter la commande affichée à la fin de kubeadm init, par exemple :
 ```bash
 kubeadm join 192.168.122.225:6443 --token vtsaj3.5umh3cbe6uog103i \
 	--discovery-token-ca-cert-hash sha256:fea096d22ca49cdf11d412055be2a7cba2c4084b3f00f00f3944d3ec27c1b772 
 ```
-![Plot](/images/join-node.png)
+![Plot](/cap/join-node.png)
 ## 8. Vérifier le cluster
 ```bash
 kubectl get nodes
 kubectl get pods -A
 ```
-![Plot](/images/cluster-ready.png)
+![Plot](/cap/cluster-ready.png)
 
 ## les infos du cluster:
-![Plot](/images/info.png)
+![Plot](/cap/info.png)
 
 
 -----
